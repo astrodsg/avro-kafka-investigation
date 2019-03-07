@@ -1,0 +1,12 @@
+{
+  "namespace": "example.avro",
+  "type": "record",
+  "name": "User",
+  "doc": "This leaves out the name field, which is fine for reading",
+  "fields": [
+    {
+      "name": "favorite_color",
+      "type": ["string", "null"]
+    }
+  ]
+}

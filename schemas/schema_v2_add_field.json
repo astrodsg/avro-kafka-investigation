@@ -1,0 +1,22 @@
+{
+  "namespace": "example.avro",
+  "type": "record",
+  "name": "User",
+  "doc": "Simple record with one optional field, added a field",
+  "fields": [
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name" : "age",
+      "type" : "int" ,
+      "doc": "added this field with a default",
+      "default" : -1
+    },
+    {
+      "name": "favorite_color",
+      "type": ["string", "null"]
+    }
+  ]
+}
